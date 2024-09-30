@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <div class="Header d-flex justify-content-center flex-column p-5"><h1 class="mx-auto">Bookmarker</h1></div>
+    <div class="inputs p-4">
+      <h2 class="w-100"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites
+      <i class="fa-solid fa-bookmark"></i></h2>
+      <div class="mb-3 form">
+        <label for="exampleFormControlInput1" class="form-label"><i class="fa-solid fa-book-bookmark"> </i>  Site Name</label>
+        <input class="form-control" id="siteName" placeholder="Bookmark Name">
+      </div>
+      <div class="mb-3 form">
+        <label for="exampleFormControlInput1" class="form-label"><i class="fa-solid fa-link"></i> Site Url</label>
+        <input class="form-control" id="siteUrl" placeholder="Website Url">
+      </div>
+      <div class="buttn text-center">
+        <input class="btn btn-primary my-2 px-5" onclick="addData()" value="Submit">
+      </div>
+    </div>
+    <table class="table text-center table-striped table-dark my-3">
+      <thead>
+        <th>Index</th>
+        <th>Website Name</th>
+        <th>Visit</th>
+        <th>Delete</th>
+      </thead>
+      <tbody id="bodyRow"></tbody>
+    </table>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
